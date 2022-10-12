@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gillroy';
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.main
+{
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(#839c92 5%,#509a7e,#588875);
+}
+.main .nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 2vw;
+}
+.main .nav .center h1{
+    font-family: "Delirium NCV";
+    font-size: 2vw;
+    font-weight: 100;
+}
+.main .nav .center{
+    color:white;
+}
+.nav i{
+    color: white;
+}
+
+.main .nav .center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 1vw;
+}
+.main .nav .center .line
+{
+    width: 4vw;
+    height: 0.2vw;
+    background-color:#0d3928;
+}
+#maintext
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+#maintext .row
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+   
+}
+#maintext .row h4{
+
+    font-size: 2vw;
+    font-family: "Delirium NCV";
+    color: white;
+}
+#maintext .row h4:nth-child(2)
+{
+    color: #183228;
+}
+#maintext>h1{
+    font-family: "Delirium NCV";
+    font-size: 7vw;
+    color: white;
+    line-height: 10vw;
+    letter-spacing: -.4vw
+
+}
+#maintext #one
+{
+    position: absolute;
+    width: 30vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-10%);
+}
+#two{
+    position: absolute;
+    width: 20vw;
+    top: 50%;
+    left: -1vw;
+    transform: translate(-50%,-50%)
+
+}
+#three{
+    position: absolute;
+    width: 20vw;
+    top: 50%;
+    left: 100%;
+    transform: translate(-60%,-50%);
+}
+.temp
+{
+    width: 50%;
+    position: absolute;
+    bottom:5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+.temp #line{
+    width:100%;
+    padding: 17px 0;
+}
+
+.temp button{
+    padding: .7vw 3.6vw;
+    border: none;
+    outline: none;
+    background-color: #95c9b5;
+    color: #0d3928;
+    border-radius: 2vw;
+}
+@media (max-width:500px) {
+    .main .nav{
+        height:  17vw;
+    }
+    .main .nav .center h1
+    {
+        font-size: 5vw;
+    }
+    #maintext>h1{
+        white-space: nowrap;
+        font-size: 14vw;
+    }
+    #maintext .row h4{
+        font-size: 3vw;
+    }
+    #maintext #one
+    {
+        width: 58vw;
+    }
+    .temp #line{
+        width: 58vw;
+    }
+    .temp button {
+        padding: 2vw 7vw;
+    }
+    .temp p{
+        font-size: 3vw;
+        color: white;
+        padding: 17px 0;
+    }
+    #three{
+        width: 31vw;
+    }
+    #two
+    {
+        width: 40vw;
+    }
+}
